@@ -25,7 +25,7 @@ function Home({ products }) {
       filtered = products.filter((item) => item.title.includes(search));
     }
     setproductsSearch(filtered);
-  }, [search]);
+  }, [search, products]);
 
   useEffect(() => {
     let filtered = productsSearch;
@@ -37,7 +37,6 @@ function Home({ products }) {
         end <= productsSearch.length ? end : productsSearch.length
       );
     }
-    console.log(filtered);
     setproductsPagination(filtered);
   }, [page, productsSearch]);
 
