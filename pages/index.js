@@ -22,7 +22,7 @@ function Home({ products }) {
   useEffect(() => {
     let filtered = products;
     if (search && search !== '') {
-      filtered = products.filter((item) => item.title.includes(search));
+      filtered = products.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
     }
     setproductsSearch(filtered);
   }, [search, products]);
