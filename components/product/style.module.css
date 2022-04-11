@@ -1,0 +1,19 @@
+.product {
+  @apply py-2 px-4 flex flex-col gap-4 shadow rounded relative hover:shadow-md;
+  &__image {
+    @apply flex justify-center items-center relative h-80;
+  }
+  &__title {
+    @apply text-2xl;
+  }
+  &__price {
+    @apply text-gray-500;
+  }
+  &__link {
+    @apply text-sky-500 hover:underline focus:outline-none focus:underline;
+    &::after {
+      content: "";
+      @apply absolute top-0 right-0 bottom-0 left-0 z-10;
+    }
+  }
+}

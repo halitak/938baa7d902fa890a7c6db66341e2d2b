@@ -1,0 +1,21 @@
+.product {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  &__info {
+    @apply flex flex-col gap-2;
+  }
+  &__image {
+    @apply flex justify-center items-center relative h-96 md:h-full;
+  }
+  &__title {
+    @apply mb-2 text-2xl;
+  }
+  &__price {
+    @apply text-gray-500;
+  }
+  &__tags {
+    @apply flex flex-wrap gap-2;
+    &__item {
+      @apply text-sky-600 border border-sky-600 rounded p-1 text-xs;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.search {
+  @apply flex justify-center mb-8;
+  &__input {
+    @apply mr-2 py-1 px-2 border rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1;
+  }
+  &__button {
+    @apply border py-1 px-2;
+  }
+}
