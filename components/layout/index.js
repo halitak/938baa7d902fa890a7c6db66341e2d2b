@@ -1,5 +1,4 @@
 import styles from "./style.module.css";
-import cn from "classnames";
 
 const Layout = ({ children }) => {
   return (
